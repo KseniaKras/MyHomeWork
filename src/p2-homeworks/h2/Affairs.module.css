@@ -1,0 +1,65 @@
+.someClass {
+    background-color: #73c4e8;
+    max-width: 600px;
+    font-size: 16px;
+
+    color: midnightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.name {
+    margin: 8px;
+    font-size: 18px;
+}
+
+.priority {
+    font-style: italic;
+}
+.high {
+    color: #d30101;
+}
+.middle {
+    color: #7a2dd9;
+}
+.low {
+    color: #43b424;
+}
+
+.buttonDelete {
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 2px;
+    background-color: cornflowerblue;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.buttonDelete:hover {
+    background-color: #abe7e7;
+}
+
+.btns {
+    background-color: #73c4e8;
+}
+
+.btn {
+    margin: 20px 35px;
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+}
+
+.btn:hover {
+    background-color: #abe7e7;
+}
+
+.active {
+    background-color: aquamarine;
+}

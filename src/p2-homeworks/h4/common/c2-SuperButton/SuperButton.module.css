@@ -1,0 +1,25 @@
+.default {
+    background-color: cornflowerblue;
+}
+
+.default:hover:not(:disabled) {
+    background-color: #abe7e7;
+}
+
+.red {
+    background: darkred;
+}
+
+.red:hover {
+    background: #d30101;
+}
+
+.buttons {
+    margin: 10px;
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+

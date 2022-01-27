@@ -1,0 +1,107 @@
+label {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox {
+    position: absolute;
+    left: -25px;
+    bottom: 3px;
+}
+
+.spanClassName {
+    color: midnightblue;
+}
+
+
+
+
+/*
+label {
+    display: block;
+    margin: 0 0 10px 0;
+    line-height: 22px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+label input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.checkbox {
+
+}
+
+.spanClassName {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 35px;
+    line-height: 22px;
+}
+.spanClassName:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #2B7335;
+    box-shadow: inset 0 0 3px #8a8a8a;
+}
+
+!* Checked *!
+label input[type=checkbox] + .spanClassName:after {
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+label input[type=checkbox]:checked + .spanClassName:after {
+    content: "✓";
+    color: green;
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    left: 2px;
+    top: -2px;
+    opacity: 1;
+}
+!* Focus *!
+
+
+!* Hover *!
+.spanClassName:hover:after {
+    filter: brightness(110%);
+}
+
+!* Active *!
+.spanClassName:active:before,
+.spanClassName:active:after {
+    filter: brightness(80%);
+}
+
+*/
+
+/* Disabled */
+/*
+label input[type=checkbox]:checked:disabled + .spanClassName {
+    color: #666;
+    cursor: default;
+}
+label input[type=checkbox]:checked:disabled + .spanClassName:before,
+label input[type=checkbox]:checked:disabled + .spanClassName:after {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+*/
