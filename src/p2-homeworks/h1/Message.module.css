@@ -1,8 +1,6 @@
 .messages {
-
     width: 430px;
     height: auto;
-    background-color: #4158c4;
     display: flex;
     justify-content: end;
 }
@@ -23,7 +21,8 @@
     height: auto;
     border-radius: 5px;
     padding: 10px;
-    background-color: #73c4e8;
+    background-color: rgba(69, 163, 234, 0.9);
+
     position: relative;
 
 }
@@ -32,10 +31,10 @@
     content: "";
     position: absolute;
     bottom: 0px;
-    left: -15px;
+    left: -17px;
     width: 0;
     height: 0;
-    border-bottom: 20px solid #73c4e8;
+    border-bottom: 20px solid rgba(69, 163, 234, 0.9);
     border-left: 20px solid transparent;
 }
 
@@ -43,18 +42,18 @@
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 15px;
-    color: rgba(5, 39, 171, 0.91);
+    color: rgb(73, 2, 121);
 }
 
 .message {
     padding-bottom: 15px;
     width: 280px;
     font-size: 17px;
-    color: rgba(5, 39, 171, 0.91);
+    color: #160128FF;
 }
 
 .time {
-    color: #545454;
+    color: #383737;
     position: absolute;
     right: 8px;
     bottom: 8px;

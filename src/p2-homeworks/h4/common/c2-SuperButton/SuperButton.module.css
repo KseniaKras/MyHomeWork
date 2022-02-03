@@ -1,25 +1,28 @@
 .default {
-    background-color: cornflowerblue;
+    background-color: rgba(187, 86, 227, 0.91);
 }
-
+.default:disabled {
+    background-color: darkgray;
+}
 .default:hover:not(:disabled) {
-    background-color: #abe7e7;
+    background-color: #dc9fdb;
 }
 
 .red {
     background: darkred;
 }
-
 .red:hover {
     background: #d30101;
 }
 
 .buttons {
-    margin: 10px;
+    letter-spacing: 1px;
+    color: snow;
+    margin: 15px;
     width: 70px;
     height: 30px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 30px;
+    border: 1px solid #dc9fdb;
     font-size: 14px;
 }
-

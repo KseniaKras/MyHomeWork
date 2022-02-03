@@ -1,9 +1,16 @@
-.someClass {
-    background-color: #73c4e8;
+.affairs {
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(69, 163, 234, 0.6);
+    border-radius: 20px;
     max-width: 600px;
-    font-size: 16px;
+    text-align: center;
+    color: aliceblue;
+}
 
-    color: midnightblue;
+.affair {
+    font-size: 17px;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -17,49 +24,50 @@
 
 .priority {
     font-style: italic;
+    font-weight: bold;
 }
 .high {
-    color: #d30101;
+    color: #721515;
 }
 .middle {
-    color: #7a2dd9;
+    color: #4d0aa6;
 }
 .low {
-    color: #43b424;
+    color: #296915;
 }
 
 .buttonDelete {
     font-size: 12px;
+    font-weight: bold;
+    color: snow;
     width: 20px;
     height: 20px;
     text-align: center;
     padding: 2px;
-    background-color: cornflowerblue;
-    border: 1px solid blue;
+    background-color: rgba(187, 86, 227, 0.91);
+    border: 1px solid #dc9fdb;
     border-radius: 10px;
 }
 
 .buttonDelete:hover {
-    background-color: #abe7e7;
-}
-
-.btns {
-    background-color: #73c4e8;
+    background-color: #dc9fdb;
 }
 
 .btn {
+    color: snow;
     margin: 20px 35px;
     width: 70px;
     height: 30px;
     padding: 5px;
-    border-radius: 10px;
-    background-color: cornflowerblue;
+    border-radius: 30px;
+    background-color: #8332e8;
+    letter-spacing: 1px;
 }
 
 .btn:hover {
-    background-color: #abe7e7;
+    background-color: #dc9fdb;
 }
 
 .active {
-    background-color: aquamarine;
+    background-color: rgb(68, 66, 208);
 }

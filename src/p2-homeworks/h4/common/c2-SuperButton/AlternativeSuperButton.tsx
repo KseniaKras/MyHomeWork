@@ -1,9 +1,18 @@
 import React from 'react'
 
-function AlternativeSuperButton() {
-    return (
-        <button/>
-    )
+type AlternativeSuperButtonPropsType = {
+    name: string
+    callback: ()=>void
 }
 
-export default AlternativeSuperButton
+export const AlternativeSuperButton: React.FC<AlternativeSuperButtonPropsType> = ({name, callback}) => {
+    const onClickHandler = () => {
+        callback()
+    }
+
+    return (
+        <button onClick={onClickHandler}>
+            {name}
+        </button>
+    )
+}

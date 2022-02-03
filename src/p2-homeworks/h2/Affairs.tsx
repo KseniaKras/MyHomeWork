@@ -27,7 +27,7 @@ function Affairs(props: AffairsPropsType) {
         return c.btn + (props.filter === filter ? ' ' + c.active : '')
     }
     return (
-        <div className={c.btns}>
+        <div className={c.affairs}>
 
             {mappedAffairs}
 

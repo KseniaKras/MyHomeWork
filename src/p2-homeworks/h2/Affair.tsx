@@ -14,7 +14,7 @@ function Affair(props: AffairPropsType) {
     const priorityColor = c[props.affair.priority]
 
     return (
-        <div className={c.someClass}>
+        <div className={c.affair}>
             <div className={c.name}>{props.affair.name}</div>
             <div className={c.priority + ' ' + priorityColor}>{props.affair.priority}</div>
 

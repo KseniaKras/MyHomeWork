@@ -1,20 +1,37 @@
 label {
     cursor: pointer;
     display: flex;
-    position: relative;
-    height: 25px;
+    /*position: relative;*/
+    /*height: 25px;*/
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .checkbox {
-    position: absolute;
-    left: -25px;
-    bottom: 3px;
+    appearance: none;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    /*position: absolute;*/
+    /*left: -25px;*/
+    /*bottom: 3px;*/
+    background: aliceblue;
+    opacity: 0.5;
+}
+
+.checkbox:checked {
+    appearance: none;
+    background-image: url('checked.png');
+    background-size: 20px auto;
+}
+
+.checkbox:focus {
+    outline: #d30101 solid 1px;
 }
 
 .spanClassName {
-    color: midnightblue;
+    /*color: midnightblue;*/
 }
 
 

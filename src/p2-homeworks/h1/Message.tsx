@@ -1,15 +1,14 @@
 import React from 'react'
 import v from './Message.module.css'
-import {messageData} from "./HW1";
 
-type MessageType = {
+type MessagePropsType = {
     avatar: string
     name: string
     message: string
     time: string
 }
 
-function Message(props:MessageType) {
+function Message(props:MessagePropsType) {
     return (
         <div className={v.messages}>
             <div className={v.messagesItem}>

@@ -1,16 +1,20 @@
 .superInput {
-    border: 2px solid midnightblue;
+    border: 3px solid midnightblue;
     background: aliceblue;
     margin-bottom: 25px;
     padding: 5px;
 }
 
 .errorInput {
-    border: 3px solid red;
+    border: 3px solid #800808;
+    padding: 5px;
 }
 
 .error {
-    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #800808;
     margin-bottom: 10px;
     margin-top: 10px;
 }

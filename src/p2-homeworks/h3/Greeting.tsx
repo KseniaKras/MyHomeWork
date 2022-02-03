@@ -16,16 +16,17 @@ const Greeting: React.FC<GreetingPropsType> = (
         name, setNameCallback, addUser, error, // деструктуризация пропсов
         totalUsers, onKeyPressHandler
     }) => {
-    const inputClass = error ? s.error : '' // need to fix with (?:)
+    const inputClass = error ? s.error : ''        // need to fix with (?:)
+    const inputError = error ? s.inputError : s.input
 
     return (
-        <div className={s.someClass}>
+        <div className={s.greeting}>
             <input value={name}
                    onChange={setNameCallback}
                    onKeyPress={onKeyPressHandler}
-                   placeholder='Your Name'
-                   className={inputClass + ' ' + s.input}/>
-            {error && <span>{error}</span>}
+                   placeholder={error ? 'Name is required!' : 'Your Name'}                              //'Your Name'
+                   className={inputError}/>
+            {error && <span className={inputClass}>{error}</span>}
             <button onClick={addUser} className={s.btn}>Add</button>
             <span className={s.countUsers}>{totalUsers}</span>
         </div>
