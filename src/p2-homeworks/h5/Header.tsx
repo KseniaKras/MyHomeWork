@@ -6,12 +6,14 @@ import s from './HW5.module.css'
 function Header() {
     // const [show, setShow] = useState(false)
 
+    const linkClassName = `${s.link + ' ' + s.active}`
+
     return (
         <div className={s.header}>
             <div className={s.menu}>
-                <NavLink className={s.link + ' ' + s.active} to={PATH.PRE_JUNIOR}>Pre-junior</NavLink>
-                <NavLink className={s.link + ' ' + s.active} to={PATH.JUNIOR}>Junior</NavLink>
-                <NavLink className={s.link + ' ' + s.active} to={PATH.JUNIOR_PLUS}>Junior+</NavLink>
+                <NavLink className={linkClassName} to={PATH.PRE_JUNIOR}>Pre-junior</NavLink>
+                <NavLink className={linkClassName} to={PATH.JUNIOR}>Junior</NavLink>
+                <NavLink className={linkClassName} to={PATH.JUNIOR_PLUS}>Junior+</NavLink>
             </div>
             <div className={s.collapsedMenu}>Menu</div>
 

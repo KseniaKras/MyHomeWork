@@ -5,7 +5,13 @@ import {Route, Routes} from "react-router-dom";
 import {Junior} from "./pages/Junior";
 import {JuniorPlus} from "./pages/JuniorPlus";
 
-export const PATH = {
+type PATHType = {
+    PRE_JUNIOR: string
+    JUNIOR: string
+    JUNIOR_PLUS: string
+}
+
+export const PATH: PATHType = {
     PRE_JUNIOR: '/pre-junior',
     JUNIOR: '/junior',
     JUNIOR_PLUS: '/junior-plus'

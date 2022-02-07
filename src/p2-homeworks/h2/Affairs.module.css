@@ -1,7 +1,7 @@
 .affairs {
-    margin: 20px;
+    margin: 20px auto;
     padding: 15px;
-    background-color: rgba(69, 163, 234, 0.6);
+    background-color: rgba(69, 163, 234, 0.51);
     border-radius: 20px;
     max-width: 600px;
     text-align: center;

@@ -1,8 +1,9 @@
 .greeting {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 20px;
-    background-color: rgba(69, 163, 234, 0.6);
+    /*background-color: rgba(69, 163, 234, 0.6);*/
+    background-color: rgba(69, 163, 234, 0.51);
     font-size: 16px;
     width: 500px;
     display: flex;
@@ -19,7 +20,7 @@
 }
 
 .inputError {
-    border: 2px solid red;
+    border: 3px solid #800808;
     width: 200px;
     height: 30px;
     font-size: 16px;
