@@ -1,0 +1,31 @@
+.hw8 {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgba(69, 163, 234, 0.51);
+    border-radius: 20px;
+    max-width: 600px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.buttonsBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.name {
+    margin: 10px 30px;
+    font-style: italic;
+}
+
+.age {
+
+}

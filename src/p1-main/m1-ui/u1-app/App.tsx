@@ -7,11 +7,6 @@ function App() {
     return (
         <div className={s.App}>
             <div>react homeworks:</div>
-            {/*<HW1 avatar={messageData.avatar} name={messageData.name} message={messageData.message}*/}
-            {/*     time={messageData.time}/>*/}
-            {/*<HW2/>*/}
-            {/*<HW3/>*/}
-            {/*<HW4/>*/}
             <HW5/>
         </div>
     )
