@@ -5,6 +5,8 @@ import {Box, Slider} from "@material-ui/core";
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
     value?: number[] | [number, number]
+    min: number
+    max: number
 
     // min, max, step, disable, ...
 }
@@ -16,15 +18,23 @@ function valuetext(value: number) {
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {
         onChangeRange, value,
+        min, max,
 
         // min, max, step, disable, ...
     }
 ) => {
     // сделать самому, можно подключать библиотеки
+    const [values, setValues] = useState([min, max])
 
-    const handleChange = (e: Event, newValue: number | number[]) => {
-        // @ts-ignore
-        onChangeRange && onChangeRange(newValue as number[]);
+    const handleChange = (e: Event, newValues: number | number[]) => {
+
+        if (!Array.isArray(newValues)) {
+            return
+        } else {
+            onChangeRange && onChangeRange([newValues[0], newValues[1]]);
+            setValues([newValues[0], newValues[1]])
+        }
+
     };
 
     return (
@@ -36,6 +46,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
                     onChange={handleChange}
                     valueLabelDisplay="auto"
                     getAriaValueText={valuetext}
+                    disableSwap
                 />
             </Box>
         </>

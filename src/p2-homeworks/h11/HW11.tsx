@@ -26,6 +26,7 @@ function HW11() {
                 <span>{value1}</span>
                 <SuperRange
                     onChangeRange={onChangeRange}
+                    min={value1}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
@@ -35,8 +36,8 @@ function HW11() {
                 <SuperDoubleRange
                     onChangeRange={onChangeRange2}
                     value={[value1,value2]}
-                    // min={value1}
-                    // max={value2}
+                    min={value1}
+                    max={value2}
                     // сделать так чтоб value1 и value2 изменялось
                 />
                 <span>{value2}</span>
